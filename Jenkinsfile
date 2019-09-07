@@ -13,7 +13,7 @@ node {
       if (isUnix()) {
          sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
       } else {
-      echo 'this is build maven artifact'
+      echo 'this is build maven artifacts'
          bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
       }
    }
